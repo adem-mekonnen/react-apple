@@ -1,12 +1,12 @@
 // header data
 const navLinks = [
   { label: "Mac", url: "/mac/" },
-  { label: "iPhone", url: "#" },
-  { label: "iPad", url: "#" },
-  { label: "Watch", url: "#" },
-  { label: "TV", url: "#" },
-  { label: "Music", url: "#" },
-  { label: "Support", url: "#" },
+  { label: "iPhone", url: "/iPhone/" },
+  { label: "iPad", url: "/ipad/" },
+  { label: "Watch", url: "/watch/" },
+  { label: "TV", url: "/tv/" },
+  { label: "Music", url: "/music/" },
+  { label: "Support", url: "/support/" },
 ];
 
 export default navLinks;

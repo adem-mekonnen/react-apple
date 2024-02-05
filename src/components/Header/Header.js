@@ -4,6 +4,7 @@ import searchIcon from "../../images/icons/search-icon-sm.png";
 import cartIcon from "../../images/icons/cart-sm.png";
 import NavLink from "../Nav/NavLink";
 import navLinks from "../Nav/NavData";
+import { Link } from "react-router-dom";
 function Header() {
   // console.log(data);
   return (
@@ -19,9 +20,9 @@ function Header() {
             >
               ☰
             </button>
-            <a className="navbar-brand mx-auto" href="#">
+            <Link className="navbar-brand mx-auto" to="#">
               <img src={logosm} />
-            </a>
+            </Link>
 
             <div className="navbar-collapse collapse">
               <ul className="navbar-nav nav-justified w-100 nav-fill">
@@ -30,15 +31,15 @@ function Header() {
 
                 {/* Search Icon */}
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/search/">
+                  <Link className="nav-link js-scroll-trigger" to="/search/">
                     <img src={searchIcon} alt="Search" />
-                  </a>
+                  </Link>
                 </li>
                 {/* Cart Icon */}
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/cart/">
+                  <Link className="nav-link js-scroll-trigger" to="/cart/">
                     <img src={cartIcon} alt="Cart" />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
