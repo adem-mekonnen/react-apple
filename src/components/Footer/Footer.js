@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ihpone from "../../images/icons/16.png";
 import "./Footer.css";
+import $ from "jquery";
+
 //import ihpone from "../../images/icons/16.png";
 import {
   shopAndLearnLinks,
@@ -13,6 +15,34 @@ import {
 } from "../Nav/NavData.js";
 import NavigationList from "../Nav/NavigationList.js";
 const Footer = () => {
+  useEffect(() => {
+    return () => {
+      if ($(window).width() <= 768) {
+        $(".footer-links-wrapper").addClass("someClass");
+      } else {
+        $(".footer-links-wrapper").removeClass("someClass");
+      }
+      $(window).on("resize", function (event) {
+        if ($(window).width() <= 768) {
+          $(".footer-links-wrapper").addClass("someClass");
+        } else {
+          $(".footer-links-wrapper").removeClass("someClass");
+          $(".footer-links-wrapper ul").show();
+        }
+      });
+      // Footer collapse functionality
+      $(document).on("click", ".someClass h3", function () {
+        $(this).next("ul").slideToggle();
+        $(this).toggleClass("expanded");
+      });
+      // Search bar
+      $(".search-link").click(function (event) {
+        event.preventDefault();
+        $(".navbar-collapse.collapse").removeClass("show");
+        $(".searchbox").slideToggle();
+      });
+    };
+  }, []);
   return (
     <footer className="footer-wrapper">
       <div className="container">

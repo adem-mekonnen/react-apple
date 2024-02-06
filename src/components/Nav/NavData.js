@@ -1,7 +1,7 @@
 // header data
 const navLinks = [
   { label: "Mac", url: "/mac/" },
-  { label: "iPhone", url: "/iPhone/" },
+  { label: "iphones", url: "/iphone/" },
   { label: "iPad", url: "/ipad/" },
   { label: "Watch", url: "/watch/" },
   { label: "TV", url: "/tv/" },

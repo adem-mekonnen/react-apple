@@ -1,11 +1,11 @@
 import "./css/styles.css";
 import "./css/bootstrap.css";
 //import "./commonResource/js/bootstrap.js";
-import Header from "./components/Header/Header.js";
+//import Header from "./components/Header/Header.js";
 
-import Footer from "./components/Footer/Footer.js";
+//import Footer from "./components/Footer/Footer.js";
 import Main from "./components/Main/Main.js";
-//import Youtube from "./components/Youtube/Youtube.js";
+
 import Mac from "./components/Pages/Mac/Mac.js";
 import Ipad from "./components/Pages/Ipad/Ipad.js";
 import Iphone from "./components/Pages/Iphone/Iphone.js";
@@ -17,6 +17,7 @@ import User from "./components/Pages/User/User.js";
 import Four04 from "./components/Pages/Four404/Four04.js";
 import Music from "./components/Pages/Music/Music.js";
 import Cart from "./components/Pages/Cart/Cart.js";
+
 import { Route, Routes } from "react-router-dom";
 import SharedLayout from "./components/Pages/SharedLayout/SharedLayout.js";
 
@@ -30,7 +31,8 @@ function App() {
           {/* <Main />
         {/* <Youtube /> */}
           <Route path="mac" element={<Mac />} />
-          <Route path="mac" element={<Iphone />} />
+          <Route path="iphone" element={<Iphone />} />
+          <Route path="iphone/:productID" element={<Product />} />
           <Route path="ipad" element={<Ipad />} />
           <Route path="watch" element={<Watch />} />
           <Route path="tv" element={<Tv />} />
