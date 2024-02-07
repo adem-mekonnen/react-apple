@@ -1,6 +1,6 @@
 # Apple Website Clone - MERN Stack
 
-![Project Image]([project-image-url](https://apple-rebuild-mern-stack.netlify.app/))
+![Project Image]([[project-image-url](https://apple-rebuild-mern-stack.netlify.app/)](https://www.apple.com/v/home/bj/images/heroes/apple-vision-pro/hero_apple_vision_pro_avail__ecthwv10twsy_medium_2x.jpg))
 
 > Rebuild of the Apple website using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
 
