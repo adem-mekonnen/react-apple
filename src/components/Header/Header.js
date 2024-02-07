@@ -21,7 +21,7 @@ function Header() {
               ☰
             </button>
             <Link className="navbar-brand mx-auto" to="#">
-              <img src={logosm} />
+              <img src={logosm} alt="mac" />
             </Link>
 
             <div className="navbar-collapse collapse">

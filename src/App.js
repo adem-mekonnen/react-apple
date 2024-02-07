@@ -1,11 +1,6 @@
 import "./css/styles.css";
 import "./css/bootstrap.css";
-//import "./commonResource/js/bootstrap.js";
-//import Header from "./components/Header/Header.js";
-
-//import Footer from "./components/Footer/Footer.js";
 import Main from "./components/Main/Main.js";
-
 import Mac from "./components/Pages/Mac/Mac.js";
 import Ipad from "./components/Pages/Ipad/Ipad.js";
 import Iphone from "./components/Pages/Iphone/Iphone.js";
@@ -13,7 +8,7 @@ import Tv from "./components/Pages/Tv/Tv.js";
 import Watch from "./components/Pages/Watch/Watch.js";
 import Support from "./components/Pages/Support/Support.js";
 import Product from "./components/Pages/Product/Product.js";
-import User from "./components/Pages/User/User.js";
+//import User from "./components/Pages/User/User.js";
 import Four04 from "./components/Pages/Four404/Four04.js";
 import Music from "./components/Pages/Music/Music.js";
 import Cart from "./components/Pages/Cart/Cart.js";

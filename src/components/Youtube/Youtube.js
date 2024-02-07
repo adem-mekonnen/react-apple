@@ -13,6 +13,11 @@ const Youtube = () => {
       });
   }, []);
   console.log(youTubeVideos);
+  const formatDate = (dateString) => {
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(dateString).toLocaleDateString("en-US", options);
+  };
+
   return (
     <div className="allVideosWrapper">
       <div className="container">
@@ -25,6 +30,7 @@ const Youtube = () => {
           {youTubeVideos?.map((singleVideo, i) => {
             let vidId = singleVideo.id.videoId;
             let vidLink = `https://www.youtube.com/watch?v=${vidId}`;
+            const formattedDate = formatDate(singleVideo.snippet.publishedAt);
             let videoWrapper = (
               <div key={i} className="col-sm-12 col-md-4">
                 <div className="singleVideoWrapper">
@@ -45,6 +51,7 @@ const Youtube = () => {
                     <div className="videoDesc">
                       {singleVideo.snippet.description}
                     </div>
+                    <div className="publishedAt">{formattedDate}</div>
                   </div>
                 </div>
               </div>

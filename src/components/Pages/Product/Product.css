@@ -1,0 +1,28 @@
+/* product.css */
+
+/* Styles for price section */
+.price-section {
+  margin-bottom: 20px;
+}
+
+.starting-price {
+  font-size: 20px;
+
+  color: #333; /* Adjust color as needed */
+}
+
+.monthly-price {
+  font-size: 18px;
+  color: #666; /* Adjust color as needed */
+}
+
+/* Styles for full description */
+.full-description {
+  margin-top: 20px;
+}
+
+.product-details {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Adjust color as needed */
+}
